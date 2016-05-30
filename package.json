@@ -1,12 +1,17 @@
 {
   "name": "uc.micro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Micro subset of unicode data files for markdown-it projects.",
   "repository": "markdown-it/uc.micro",
   "license": {
     "type": "WTFPL",
     "url": "http://www.wtfpl.net/txt/copying/"
   },
+  "files": [
+    "categories/",
+    "properties/",
+    "index.js"
+  ],
   "main": "index.js",
   "devDependencies": {
     "unicode-8.0.0": "~0.6.0"
