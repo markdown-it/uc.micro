@@ -13,15 +13,15 @@ refresh:
 	rm -rf categories
 
 	mkdir -p properties/Any
-	cp node_modules/unicode-7.0.0/properties/Any/regex.js properties/Any/
+	cp node_modules/unicode-8.0.0/Binary_Property/Any/regex.js properties/Any/
 	mkdir -p categories/Cc
-	cp node_modules/unicode-7.0.0/categories/Cc/regex.js categories/Cc/
+	cp node_modules/unicode-8.0.0/General_Category/Control/regex.js categories/Cc/
 	mkdir -p categories/Cf
-	cp node_modules/unicode-7.0.0/categories/Cf/regex.js categories/Cf/
+	cp node_modules/unicode-8.0.0/General_Category/Format/regex.js categories/Cf/
 	mkdir -p categories/Z
-	cp node_modules/unicode-7.0.0/categories/Z/regex.js categories/Z/
+	cp node_modules/unicode-8.0.0/General_Category/Space_Separator/regex.js categories/Z/
 	mkdir -p categories/P
-	cp node_modules/unicode-7.0.0/categories/P/regex.js categories/P/
+	cp node_modules/unicode-8.0.0/General_Category/Punctuation/regex.js categories/P/
 
 
 publish:

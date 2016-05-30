@@ -9,6 +9,6 @@
   },
   "main": "index.js",
   "devDependencies": {
-    "unicode-7.0.0": "~0.1.5"
+    "unicode-8.0.0": "~0.6.0"
   }
 }
