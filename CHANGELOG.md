@@ -1,3 +1,11 @@
+1.0.3 / 2016-09-14
+------------------
+
+- Unicode update to 9.0.0.
+- Rewrite update script (use npm instead of Makefile).
+- Added integrity tests.
+
+
 1.0.2 / 2015-06-24
 ------------------
 
@@ -8,7 +16,8 @@
 ------------------
 
 - Update to Unicode 8.+.
-- Also automatically fix possible ReDOS in `Any`, if source used to generate patterns like `(Any)+`.
+- Also automatically fix possible ReDOS in `Any`, if source used to generate
+  patterns like `(Any)+`.
 
 
 1.0.0 / 2015-03-10
