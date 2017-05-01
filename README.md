@@ -1,5 +1,7 @@
 # uc.micro
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/markdown-it/uc.micro.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://img.shields.io/travis/markdown-it/uc.micro/master.svg?style=flat)](https://travis-ci.org/markdown-it/uc.micro)
 [![NPM version](https://img.shields.io/npm/v/uc.micro.svg?style=flat)](https://www.npmjs.org/package/uc.micro)
 
