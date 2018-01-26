@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "description": "Micro subset of unicode data files for markdown-it projects.",
   "repository": "markdown-it/uc.micro",
-  "license": "WTFPL",
+  "license": "MIT",
   "files": [
     "categories/",
     "properties/",
