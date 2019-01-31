@@ -27,6 +27,8 @@ describe('Unicode classes', function () {
 
   it('Z', function () {
     assert.ok(ucm.Z.test(' '));
+    assert.ok(ucm.Z.test('\u2028'));
+    assert.ok(ucm.Z.test('\u2029'));
     assert.ok(!ucm.Z.test('A'));
   });
 

@@ -17,6 +17,6 @@ cp(`node_modules/${upkg}/General_Category/Control/regex.js`, 'categories/Cc/');
 mkdir('-p', 'categories/Cf');
 cp(`node_modules/${upkg}/General_Category/Format/regex.js`, 'categories/Cf/');
 mkdir('-p', 'categories/Z');
-cp(`node_modules/${upkg}/General_Category/Space_Separator/regex.js`, 'categories/Z/');
+cp(`node_modules/${upkg}/General_Category/Separator/regex.js`, 'categories/Z/');
 mkdir('-p', 'categories/P');
 cp(`node_modules/${upkg}/General_Category/Punctuation/regex.js`, 'categories/P/');
