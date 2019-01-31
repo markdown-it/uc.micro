@@ -1,6 +1,6 @@
 {
   "name": "uc.micro",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Micro subset of unicode data files for markdown-it projects.",
   "repository": "markdown-it/uc.micro",
   "license": "MIT",
