@@ -14,7 +14,7 @@
     "update": "node update.js && npm test"
   },
   "devDependencies": {
-    "mocha": "^6.0.1",
+    "mocha": "^7.1.2",
     "shelljs": "^0.8.1",
     "unicode-11.0.0": "^0.7.8"
   }
