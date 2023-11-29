@@ -1,35 +1,31 @@
-'use strict';
+import assert from 'node:assert'
+import ucm from './index.mjs'
 
-const assert = require('assert');
-const ucm    = require('./');
-
-describe('Unicode classes', function () {
-
-  it('Any', function () {
+describe('Unicode classes', () => {
+  it('Any', () => {
     assert.ok(ucm.Any.test('A'));
     assert.ok(!ucm.Any.test(''));
   });
 
-  it('Cc', function () {
+  it('Cc', () => {
     assert.ok(ucm.Cc.test('\r'));
     assert.ok(!ucm.Cc.test('A'));
   });
 
-  it('Cf', function () {
+  it('Cf', () => {
     assert.ok(ucm.Cf.test('\xAD'));
     assert.ok(!ucm.Cf.test('A'));
   });
 
-  it('P', function () {
+  it('P', () => {
     assert.ok(ucm.P.test(','));
     assert.ok(!ucm.P.test('A'));
   });
 
-  it('Z', function () {
+  it('Z', () => {
     assert.ok(ucm.Z.test(' '));
     assert.ok(ucm.Z.test('\u2028'));
     assert.ok(ucm.Z.test('\u2029'));
     assert.ok(!ucm.Z.test('A'));
   });
-
 });
