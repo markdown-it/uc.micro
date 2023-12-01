@@ -1,5 +1,5 @@
 import assert from 'node:assert'
-import ucm from './index.mjs'
+import * as ucm from '../index.mjs'
 
 describe('Unicode classes', () => {
   it('Any', () => {
