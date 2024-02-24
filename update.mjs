@@ -23,3 +23,4 @@ pick(`${upkgPath}//General_Category/Control`, 'categories/Cc/');
 pick(`${upkgPath}//General_Category/Format`, 'categories/Cf/');
 pick(`${upkgPath}//General_Category/Separator`, 'categories/Z/');
 pick(`${upkgPath}//General_Category/Punctuation`, 'categories/P/');
+pick(`${upkgPath}//General_Category/Symbol`, 'categories/S/');
