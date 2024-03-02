@@ -22,6 +22,15 @@ describe('Unicode classes', () => {
     assert.ok(!ucm.P.test('A'));
   });
 
+  it('S', () => {
+    assert.ok(ucm.S.test('$'));
+    assert.ok(ucm.S.test('£'));
+    assert.ok(ucm.S.test('€'));
+    assert.ok(!ucm.S.test('A'));
+    assert.ok(!ucm.S.test(''));
+    assert.ok(!ucm.S.test(','));
+  });
+
   it('Z', () => {
     assert.ok(ucm.Z.test(' '));
     assert.ok(ucm.Z.test('\u2028'));
