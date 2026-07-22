@@ -6,8 +6,10 @@
   "license": "MIT",
   "main": "build/index.cjs.js",
   "module": "build/index.mjs",
+  "types": "build/index.d.ts",
   "exports": {
     ".": {
+      "types": "./build/index.d.ts",
       "require": "./build/index.cjs.js",
       "import": "./build/index.mjs"
     },

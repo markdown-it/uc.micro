@@ -21,6 +21,7 @@ function unicodeProperties() {
       if (id === 'uc-micro:unicode') return virtualId
     },
 
+    // Generate JavaScript module with regular expressions.
     load(id) {
       if (id !== virtualId) return null
 
@@ -29,6 +30,21 @@ function unicodeProperties() {
 
         return `export const ${name} = ${characters.toRegExp()}`
       }).join('\n')
+    },
+
+    // Generate TypeScript declarations.
+    generateBundle(options) {
+      if (options.format !== 'es') return
+
+      const source = Object.keys(sets)
+        .map(name => `export declare const ${name}: RegExp`)
+        .join('\n')
+
+      this.emitFile({
+        type: 'asset',
+        fileName: 'index.d.ts',
+        source: `${source}\n`
+      })
     }
   }
 }
