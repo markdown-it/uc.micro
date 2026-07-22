@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "regenerate-unicode-properties": "10.2.2",
-    "rollup": "^4.6.1",
-    "typescript": "^6.0.3"
+    "rollup": "^4.62.2",
+    "typescript": "^7.0.2"
   }
 }
