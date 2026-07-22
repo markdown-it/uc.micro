@@ -19,7 +19,7 @@
     "build/"
   ],
   "scripts": {
-    "test": "npm run build && node --test",
+    "test": "npm run build && node --test test/**/*.test.*",
     "build": "rollup -c",
     "prepublishOnly": "npm run build"
   },
