@@ -13,3 +13,19 @@ That's just a proxy to reduce dependencies/install size.
 
 **This package content is ONLY for [markdown-it](https://github.com/markdown-it)
 projects needs. Don't ask to extend it!**
+
+
+## Update Unicode data
+
+Update the pinned `regenerate-unicode-properties` dependency and run the tests:
+
+```sh
+npm install --save-dev --save-exact regenerate-unicode-properties@latest
+npm test
+```
+
+To check the Unicode version provided by the dependency:
+
+```sh
+node -p "require('regenerate-unicode-properties/unicode-version.js')"
+```

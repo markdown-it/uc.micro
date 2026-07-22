@@ -1,3 +1,16 @@
+3.0.0 / 2026-07-22
+------------------
+
+The major version reflects full rework of code generation. No breaking changes should happen.
+
+- Unicode update to 17.0.0.
+- Added TypeScript declarations.
+- Removed per-category subpath exports.
+- Generate regular expressions at build time via
+  `regenerate-unicode-properties`. All Regexps are now in single file (can be
+  tree-shaked)
+
+
 2.1.0 / 2024-03-02
 ------------------
 
