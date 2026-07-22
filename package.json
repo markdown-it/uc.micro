@@ -23,14 +23,13 @@
     "build/"
   ],
   "scripts": {
-    "test": "npm run build && mocha",
+    "test": "npm run build && node --test",
     "build": "rollup -c",
     "update": "node update.mjs && npm test",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@unicode/unicode-15.1.0": "^1.5.2",
-    "mocha": "^10.2.0",
     "rollup": "^4.6.1",
     "shelljs": "^0.8.5"
   }

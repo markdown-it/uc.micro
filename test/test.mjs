@@ -1,5 +1,9 @@
 import assert from 'node:assert'
-import * as ucm from '../index.mjs'
+import { createRequire } from 'node:module'
+import { describe, it } from 'node:test'
+import * as ucm from 'uc.micro'
+
+const require = createRequire(import.meta.url)
 
 describe('Unicode classes', () => {
   it('Any', () => {
@@ -38,3 +42,15 @@ describe('Unicode classes', () => {
     assert.ok(!ucm.Z.test('A'));
   });
 });
+
+describe('CJS', () => {
+  it('require', () => {
+    const cjs_ucm = require('uc.micro')
+
+    assert.ok(cjs_ucm.Any)
+    assert.ok(cjs_ucm.Cc)
+    assert.ok(cjs_ucm.Cf)
+    assert.ok(cjs_ucm.P)
+    assert.ok(cjs_ucm.Z)
+  })
+})
