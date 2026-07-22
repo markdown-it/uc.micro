@@ -19,12 +19,14 @@
     "build/"
   ],
   "scripts": {
-    "test": "npm run build && node --test test/**/*.test.*",
+    "test": "npm run build && npm run type-check && node --test test/**/*.test.*",
     "build": "rollup -c",
+    "type-check": "tsc --noEmit --strict --target ESNext --module ESNext --moduleResolution Bundler test/types.ts",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "regenerate-unicode-properties": "10.2.2",
-    "rollup": "^4.6.1"
+    "rollup": "^4.6.1",
+    "typescript": "^6.0.3"
   }
 }
