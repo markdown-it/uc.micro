@@ -5,32 +5,24 @@
   "repository": "markdown-it/uc.micro",
   "license": "MIT",
   "main": "build/index.cjs.js",
-  "module": "index.mjs",
+  "module": "build/index.mjs",
   "exports": {
     ".": {
       "require": "./build/index.cjs.js",
-      "import": "./index.mjs"
+      "import": "./build/index.mjs"
     },
-    "./*": {
-      "require": "./*",
-      "import": "./*"
-    }
+    "./package.json": "./package.json"
   },
   "files": [
-    "index.mjs",
-    "categories/",
-    "properties/",
     "build/"
   ],
   "scripts": {
     "test": "npm run build && node --test",
     "build": "rollup -c",
-    "update": "node update.mjs && npm test",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@unicode/unicode-15.1.0": "^1.5.2",
-    "rollup": "^4.6.1",
-    "shelljs": "^0.8.5"
+    "regenerate-unicode-properties": "10.2.2",
+    "rollup": "^4.6.1"
   }
 }
